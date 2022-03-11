@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "PostNoBillsJaffna-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Post No Bills Jaffna Light"),
+      url("../../fonts/PostNoBillsJaffna-Light.woff") format("woff");
+  }
+
+  .custom-font {
+    font-family: "PostNoBillsJaffna-Light";
+  }
+
+  .margin-pos{
+      margin-top: 4.35rem;
+  }
+
+  .ml-15{
+    margin-left: 3.8rem;
+}
+
+  .wide-img{
+    width: 6.1rem;
+}

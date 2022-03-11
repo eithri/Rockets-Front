@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "PostNoBillsJaffna-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Post No Bills Jaffna Light"),
+      url("../../fonts/PostNoBillsJaffna-Light.woff") format("woff");
+  }
+  
+  input, span, button{
+    font-family: "PostNoBillsJaffna-Light";
+  }
+
+  .back-image {
+    background-image: url("../../assets/bricks_background.png");
+  }

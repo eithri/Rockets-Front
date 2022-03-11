@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "PostNoBillsJaffna-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna Light"),
+    url("../../fonts/PostNoBillsJaffna-Light.woff") format("woff");
+}
+
+.custom-font {
+  font-family: "PostNoBillsJaffna-Light";
+}
+
+h3 {
+  background-color: white;
+}

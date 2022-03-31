@@ -5,6 +5,7 @@ import Cookies from "universal-cookie";
 import jwt from "jsonwebtoken";
 import ModalForgetPassword from "../../components/ModalForgetPassword/ModalForgetPassword";
 import "./login.css";
+import "dotenv/config";
 
 const cookies = new Cookies();
 
@@ -25,8 +26,8 @@ const validate = values => {
   return errors;
 }
 
-
-const baseUrl = "http://localhost:4000/api/auth/signin";
+const { BACKEND_SITE } = process.env
+const baseUrl = BACKEND_SITE+"/api/auth/signin";
 
 export default class Login extends Component {
 

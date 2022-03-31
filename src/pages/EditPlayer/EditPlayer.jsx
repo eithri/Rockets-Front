@@ -6,7 +6,7 @@ import "./EditPlayer.css";
 
 const cookies = new Cookies();
 const url =
-  "http://3.238.91.249:4000/api/players/" + cookies.get("playerEditID");
+  "https://rocketsapi.herokuapp.com/api/players/" + cookies.get("playerEditID");
 
 const headers = {
   "Content-Type": "application/json",

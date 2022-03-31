@@ -7,7 +7,7 @@ import "./EditTest.css";
 
 const cookies = new Cookies();
 const url =
-    "http://3.238.91.249:4000/api/proofs/" + cookies.get("testEditId");
+    "https://rocketsapi.herokuapp.com/api/proofs/" + cookies.get("testEditId");
 
 const headers = {
     "Content-Type": "application/json",

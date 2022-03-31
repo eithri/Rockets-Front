@@ -28,7 +28,7 @@ export default function ProofInfoScreen(props) {
     const fetchData = async () => {
       try {
         const { data } = await Axios.get(
-          "http://3.238.91.249:4000/api/proofs/" + proofId, { headers: headers }
+          "https://rocketsapi.herokuapp.com/api/proofs/" + proofId, { headers: headers }
         );
         setProof(data);
         setPlayers(data.listPlayers);

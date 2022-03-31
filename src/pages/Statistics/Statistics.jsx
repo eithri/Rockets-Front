@@ -15,7 +15,7 @@ const headers = {
   'x-access-token': cookies.get("token")
 }
 
-const tempUrl = "http://3.238.91.249:4000/api/statistic/category"
+const tempUrl = "https://rocketsapi.herokuapp.com/api/statistic/category"
 
 export default function Statistics() {
 

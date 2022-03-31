@@ -14,7 +14,7 @@ const headers = {
 
 export default function ModalAddProofResult(props) {
 
-  const url = "http://3.238.91.249:4000/api/proofs/addResult/" + props.proofId;
+  const url = "https://rocketsapi.herokuapp.com/api/proofs/addResult/" + props.proofId;
 
   const [showModal, setShowModal] = React.useState(false);
   const [playerName, setPlayer] = React.useState("");
@@ -42,7 +42,7 @@ export default function ModalAddProofResult(props) {
     const fetchData = async () => {
       try {
         const { data } = await Axios.get(
-          "http://3.238.91.249:4000/api/players", { headers: headers }
+          "https://rocketsapi.herokuapp.com/api/players", { headers: headers }
         );
         setPlayers(data);
       } catch (err) { }

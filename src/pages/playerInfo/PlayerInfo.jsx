@@ -9,8 +9,8 @@ const cookies = new Cookies();
 
 export default function PlayerInfo(props) {
   var isOwnProfile = false;
-  const url = "http://3.238.91.249:4000/api/users/player/" + props.match.params.playerid;
-  const userUrl = "http://3.238.91.249:4000/api/users/" + props.match.params.playerid;
+  const url = "https://rocketsapi.herokuapp.com/api/users/player/" + props.match.params.playerid;
+  const userUrl = "https://rocketsapi.herokuapp.com/api/users/" + props.match.params.playerid;
 
   const headers = {
     "Content-Type": "application/json",

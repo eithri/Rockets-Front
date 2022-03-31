@@ -22,7 +22,7 @@ export default function PlayerProofCard(props) {
   const proofType = props.proofType;
   const playerId = props.player.playerId._id;
 
-  const url = "http://3.238.91.249:4000/api/proofs/deleteResult/" + props.proofId;
+  const url = "https://rocketsapi.herokuapp.com/api/proofs/deleteResult/" + props.proofId;
 
   function deleteResult() {
     const answer = window.confirm("¿Desea eliminar el resultado?")

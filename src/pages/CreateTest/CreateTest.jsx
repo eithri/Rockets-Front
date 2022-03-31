@@ -8,7 +8,7 @@ import Cookies from "universal-cookie";
 
 const cookies = new Cookies();
 
-const url = "http://3.238.91.249:4000/api/proofs";
+const url = "https://rocketsapi.herokuapp.com/api/proofs";
 
 const headers = {
   'Content-Type': 'application/json',

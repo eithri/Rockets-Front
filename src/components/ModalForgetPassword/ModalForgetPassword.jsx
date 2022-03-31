@@ -6,7 +6,7 @@ export default function ModalForgetPassword() {
   const [showModal, setShowModal] = React.useState(false);
   const [inputMail, setInputMail] = React.useState('')
 
-  const url = "http://3.238.91.249:4000/api/users/recoverPassword";
+  const url = "https://rocketsapi.herokuapp.com/api/users/recoverPassword";
 
   function handleInput() {
     if (inputMail && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputMail)) {

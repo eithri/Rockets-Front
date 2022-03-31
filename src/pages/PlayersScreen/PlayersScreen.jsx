@@ -38,7 +38,7 @@ export default function PlayersScreen(props) {
     const fetchData = async () => {
       try {
         const { data } = await Axios.get(
-          "http://3.238.91.249:4000/api/players", { headers: headers }
+          "https://rocketsapi.herokuapp.com/api/players", { headers: headers }
         );
         setPlayers(data);
         setPlayersCardList(data);

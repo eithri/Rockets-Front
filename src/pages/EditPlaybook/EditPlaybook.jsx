@@ -8,7 +8,7 @@ import S3FileUpload from "react-s3"
 
 const cookies = new Cookies();
 const url =
-    "http://3.238.91.249:4000/api/playbook/" + cookies.get("playbookToEdit");
+    "https://rocketsapi.herokuapp.com/api/playbook/" + cookies.get("playbookToEdit");
 
 const headers = {
     "Content-Type": "application/json",

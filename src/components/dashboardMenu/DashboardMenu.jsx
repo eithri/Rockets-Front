@@ -57,7 +57,7 @@ export default function DashboardMenu(props) {
   }
 
   function loadUser() {
-    instance.get("http://3.238.91.249:4000/api/users/")
+    instance.get("https://rocketsapi.herokuapp.com/api/users/")
       .then(response => {
         var result = response.data.find(obj => {
           return obj.email === cookies.get("email");

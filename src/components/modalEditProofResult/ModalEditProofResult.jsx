@@ -19,7 +19,7 @@ export default function ModalEditProofResult(props) {
   const playerId = props.parentProps.player.playerId._id;
   const playerName = props.parentProps.player.playerId.name + " " + props.parentProps.player.playerId.lastName;
 
-  const url = "http://3.238.91.249:4000/api/proofs/editResult/" + proofId;
+  const url = "https://rocketsapi.herokuapp.com/api/proofs/editResult/" + proofId;
 
 
   const [showModal, setShowModal] = React.useState(false);

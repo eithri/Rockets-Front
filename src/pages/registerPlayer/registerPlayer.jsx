@@ -6,7 +6,7 @@ import S3FileUpload from "react-s3";
 
 import "./registerPlayer.css";
 
-const url = "http://3.238.91.249:4000/api/players";
+const url = "https://rocketsapi.herokuapp.com/api/players";
 
 const cookies = new Cookies();
 

@@ -39,7 +39,7 @@ export default function PlaybookScreen(props) {
     const fetchData = async () => {
       try {
         const { data } = await Axios.get(
-          "http://3.238.91.249:4000/api/playbook", { headers: headers }
+          "https://rocketsapi.herokuapp.com/api/playbook", { headers: headers }
         );
         setPlaybooks(data);
         setPlaybooksList(data);

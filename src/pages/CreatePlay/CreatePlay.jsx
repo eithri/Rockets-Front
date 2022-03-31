@@ -9,7 +9,7 @@ import Cookies from "universal-cookie";
 
 const cookies = new Cookies();
 
-const url = "http://3.238.91.249:4000/api/playbook/addPlay/";
+const url = "https://rocketsapi.herokuapp.com/api/playbook/addPlay/";
 
 const headers = {
     'Content-Type': 'application/json',

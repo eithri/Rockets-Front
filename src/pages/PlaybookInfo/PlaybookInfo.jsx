@@ -15,7 +15,7 @@ const cookies = new Cookies();
 
 export default function PlaybookInfo(props) {
     var isOwnProfile = false;
-    const url = "http://3.238.91.249:4000/api/playbooks/" + props.match.params.playbookid;
+    const url = "https://rocketsapi.herokuapp.com/api/playbooks/" + props.match.params.playbookid;
     // const userUrl = "http://3.238.91.249:4000/api/users/" + props.match.params.playerid;
 
     const [playbooks, setPlaybooks] = useState([]);
@@ -42,7 +42,7 @@ export default function PlaybookInfo(props) {
         const fetchData = async () => {
             try {
                 const { data } = await Axios.get(
-                    "http://3.238.91.249:4000/api/playbook/" + props.match.params.playbookid, { headers: headers }
+                    "https://rocketsapi.herokuapp.com/api/playbook/" + props.match.params.playbookid, { headers: headers }
                 );
                 setPlaybooks(data.plays);
                 setPlaybooksList(data.plays);
